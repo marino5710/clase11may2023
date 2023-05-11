@@ -49,9 +49,13 @@ var_dump($silla);
 echo "</pre>";
 
 $mesa->mostrarNombreProducto();
-$mesa->mostrarPrecioProducto();
-$mesa->mostrarDisponibleProducto();
+echo " ";
+$mesa->mostrarPrecioProducto ();
+echo " ";
+$mesa->mostrarDisponibleProducto ();
 echo "<br>";
-$silla->mostrarNombreProducto();
-$silla->mostrarPrecioProducto();
-$silla->mostrarDisponibleProducto();
+$silla->mostrarNombreProducto ();
+echo " ";
+$silla->mostrarPrecioProducto ();
+echo " ";
+$silla->mostrarDisponibleProducto ();
