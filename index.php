@@ -15,7 +15,14 @@ class Producto{
     public function mostrarPrecioProducto() : void{
         echo $this->precio;
     }
-
+    public function mostrarDisponibleProducto() : void{
+        if ($this->disponible){
+         echo "Disponible";
+        }else{
+            echo "No Disponible ";
+        }
+        
+    }
 }
 
 // CREACIÓN DE UN OBJETO
