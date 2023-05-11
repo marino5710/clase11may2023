@@ -49,8 +49,9 @@ var_dump($silla);
 echo "</pre>";
 
 $mesa->mostrarNombreProducto();
-$silla->mostrarNombreProducto();
 $mesa->mostrarPrecioProducto();
-$silla->mostrarPrecioProducto();
 $mesa->mostrarDisponibleProducto();
+echo "<br>";
+$silla->mostrarNombreProducto();
+$silla->mostrarPrecioProducto();
 $silla->mostrarDisponibleProducto();
