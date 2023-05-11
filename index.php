@@ -28,9 +28,9 @@ $mesa->disponible = true;
 
 $silla = new Producto(); 
 
-$mesa->nombre = "Silla grande";
-$mesa->precio = 100;
-$mesa->disponible = false;
+$silla->nombre = "Silla grande";
+$silla->precio = 100;
+$silla->disponible = false;
 
 
 
