@@ -51,3 +51,6 @@ echo "</pre>";
 $mesa->mostrarNombreProducto();
 $silla->mostrarNombreProducto();
 $mesa->mostrarPrecioProducto();
+$silla->mostrarPrecioProducto();
+$mesa->mostrarDisponibleProducto();
+$silla->mostrarDisponibleProducto();
