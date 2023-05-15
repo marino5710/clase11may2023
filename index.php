@@ -4,7 +4,7 @@ class Producto{
     // DEFINICION DE ATRIBUTOS
     public $precio;
     public $nombre;
-    public $disponible;
+    private $disponible;
 
 //metodo constructor 
     public function __construct(int $precio= 0, string $nombre = 'sin nombre', bool $disponible = false)
@@ -31,15 +31,27 @@ class Producto{
         }
         
     }
+    //metodos getter //fuera de una clase se utiliza si se declara como privado
+    public function getDisponibilidad() : string{
+        return $this->disponible ? 'SI ESTA DISPONIBLE' : 'NO ESTA DISPONIBLE';
+    }
+    //metodos setter 
+    public function setDisponibilidad(bool $disponible) : void{
+        $this->disponible= $disponible ;
+    }
+
+
 }
 
 // CREACIÓN DE UN OBJETO
 // CREAR UNA INSTANCIA
-$mesa = new Producto('500', 'nombre', 1); 
+$mesa = new Producto(); 
 
 // $mesa->nombre = "Mesa";
 // $mesa->precio = 500;
 // $mesa->disponible = true;
+
+
 
 // $silla = new Producto(); 
 
