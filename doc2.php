@@ -1,7 +1,7 @@
 <?php
 
 class Transporte {
-    public $ruedas; 
+    protected $ruedas; 
     public $capacidad;
 
     public function __construct($ruedas, $capacidad)
@@ -32,7 +32,7 @@ class Carro extends Transporte{
 }
 
 $carroToyota = new Carro(4,4); 
-$carroToyota->puertas=2;
+$carroToyota->puertas= 4;
 $carroToyota->getInfo();
 
 class Bicicleta extends Transporte {
