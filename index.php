@@ -1,10 +1,18 @@
-<?php
+<?php 
 // DEFINICION DE LA CLASE PRODUCTO
 class Producto{
     // DEFINICION DE ATRIBUTOS
     public $precio;
     public $nombre;
     public $disponible;
+
+//metodo constructor 
+    public function __construct(int $precio= 0, string $nombre = 'sin nombre', bool $disponible = false)
+    {
+        $this->precio = $precio;
+        $this->nombre = $nombre;
+        $this->disponible = $disponible;
+    }
 
     // DEFINICION DE METODOS
 
@@ -27,35 +35,35 @@ class Producto{
 
 // CREACIÓN DE UN OBJETO
 // CREAR UNA INSTANCIA
-$mesa = new Producto(); 
+$mesa = new Producto('500', 'nombre', 1); 
 
-$mesa->nombre = "Mesa";
-$mesa->precio = 500;
-$mesa->disponible = true;
+// $mesa->nombre = "Mesa";
+// $mesa->precio = 500;
+// $mesa->disponible = true;
 
-$silla = new Producto(); 
+// $silla = new Producto(); 
 
-$silla->nombre = "Silla grande";
-$silla->precio = 100;
-$silla->disponible = false;
+// $silla->nombre = "Silla grande";
+// $silla->precio = 100;
+// $silla->disponible = false;
 
 
 
 echo "<pre>";
 var_dump($mesa);
 echo "</pre>";
-echo "<pre>";
-var_dump($silla);
-echo "</pre>";
+// echo "<pre>";
+// var_dump($silla);
+// echo "</pre>";
 
-$mesa->mostrarNombreProducto();
-echo " ";
-$mesa->mostrarPrecioProducto ();
-echo " ";
-$mesa->mostrarDisponibleProducto ();
-echo "<br>";
-$silla->mostrarNombreProducto ();
-echo " ";
-$silla->mostrarPrecioProducto ();
-echo " ";
-$silla->mostrarDisponibleProducto ();
+// $mesa->mostrarNombreProducto();
+// echo " ";
+// $mesa->mostrarPrecioProducto ();
+// echo " ";
+// $mesa->mostrarDisponibleProducto ();
+// echo "<br>";
+// $silla->mostrarNombreProducto ();
+// echo " ";
+// $silla->mostrarPrecioProducto ();
+// echo " ";
+// $silla->mostrarDisponibleProducto ();
